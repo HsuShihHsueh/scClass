@@ -1,3 +1,3 @@
 name,id,version
-scClass,17766zOTbVn1d-e_-NiWKfVZoj3TFgli2,0.9.10
+scClass,1Msi09meN6mQt-GlyX9lflpKlXeXgdFnb,0.9.10
 scClass_dataset,1KM6F3D5tTKd1DIzuxt0emnQprX62Ds8M,0.9.9
