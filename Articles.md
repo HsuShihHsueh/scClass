@@ -21,6 +21,8 @@ We collect 10X genomics datasets since it is a popularization scRNA-seq method.
 Using bone marrow and cord blood dataset to training and try to predict on pbmc and other dataset.<br>
 We use algothithn from librarySizeFactors and computeSumFactors function on scran(R package) and implemented by scanpy function.<br>
 We transfer cell type refer to [Cell Ontology](https://www.ebi.ac.uk/ols/ontologies/cl).
+![image](pic/data_preprocessing.png)
+▲ 
 
 ### scClass Model
 First, the transcriptome needs to transfer the gene axis to match the model.
@@ -29,18 +31,22 @@ The model is implemented by PyTorch.
 We can pick unknown cell by the output are less prominent. 
 To adpate each dataset,  we add standard normalize for each channel after output and pick the maximum output upper 1.6~2.0(different by each label) to unknow label.
 
-## Rseult
-
-![](pic/cb_bm_confusion.png =100x20)
-![image](pic/pbmc_confusion.png  =100x20)
-
+## Rseult: compare to origin dataset
+<!-- <div>
+  <img src="pic/cb_bm_confusion.png" width="300" height="300">
+  <img src="pic/pbmc_confusion.png" width="300" height="300">
+</div>
 ▲ cordblood and bonmarrow dataset compare to origin dataset
-▲ pbmc dataset compare to origin dataset
+▲ pbmc dataset compare to origin dataset -->
 
+| <img src="pic/cb_bm_confusion.png" width="300" height="300">| <img src="pic/pbmc_confusion.png" width="300" height="300">|
+|:-:|:-:|
+| CordBlood and BoneMarrow dataset | PBMC dataset |
 
 ## Conclusion
 We present a immune cell classifier tool created scClass based on supervised deep learning.
 scClass is a package that can use in Python.
 We except the model has higher accuracy of adapted in our future version.
 The source code is available at https://github.com/majaja068/scRNA-CellType-classifier/
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+
+![image](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
