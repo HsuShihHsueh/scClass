@@ -21,8 +21,10 @@ We collect 10X genomics datasets since it is a popularization scRNA-seq method.
 Using bone marrow and cord blood dataset to training and try to predict on pbmc and other dataset.<br>
 We use algothithn from librarySizeFactors and computeSumFactors function on scran(R package) and implemented by scanpy function.<br>
 We transfer cell type refer to [Cell Ontology](https://www.ebi.ac.uk/ols/ontologies/cl).
-![image](pic/data_preprocessing.png)
-▲ 
+<div align="center">
+  <kbd><img src="pic/data_preprocessing.png" width="540" height="270" style="text-align: center"></kbd><br>
+  ▲ Data-Preprocessing
+</div>  
 
 ### scClass Model
 First, the transcriptome needs to transfer the gene axis to match the model.
@@ -32,16 +34,13 @@ We can pick unknown cell by the output are less prominent.
 To adpate each dataset,  we add standard normalize for each channel after output and pick the maximum output upper 1.6~2.0(different by each label) to unknow label.
 
 ## Rseult: compare to origin dataset
-<!-- <div>
-  <img src="pic/cb_bm_confusion.png" width="300" height="300">
-  <img src="pic/pbmc_confusion.png" width="300" height="300">
-</div>
-▲ cordblood and bonmarrow dataset compare to origin dataset
-▲ pbmc dataset compare to origin dataset -->
-
-| <img src="pic/cb_bm_confusion.png" width="300" height="300">| <img src="pic/pbmc_confusion.png" width="300" height="300">|
+<div align="center">
+  
+| <img src="pic/cb_bm_confusion.png" width="400" height="400">| <img src="pic/pbmc_confusion.png" width="400" height="400">|
 |:-:|:-:|
-| CordBlood and BoneMarrow dataset | PBMC dataset |
+| CordBlood and BoneMarrow dataset | PBMC dataset | 
+  
+</div>
 
 ## Conclusion
 We present a immune cell classifier tool created scClass based on supervised deep learning.
