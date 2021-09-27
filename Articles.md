@@ -32,10 +32,10 @@ To adpate each dataset,  we add standard normalize for each channel after output
 ## Rseult
 
 
-▲ cordblood and bonmarrow dataset
+▲ cordblood and bonmarrow dataset compare to origin dataset
 
 
-▲ pbmc dataset
+▲ pbmc dataset compare to origin dataset
 
 
 ## Conclusion
