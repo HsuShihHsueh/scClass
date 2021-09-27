@@ -36,9 +36,9 @@ To adpate each dataset,  we add standard normalize for each channel after output
 ## Rseult: compare to origin dataset
 <div align="center">
   
-| <img src="pic/cb_bm_confusion.png" width="400" height="400">| <img src="pic/pbmc_confusion.png" width="400" height="400">|
-|:-:|:-:|
-| CordBlood and BoneMarrow dataset | PBMC dataset | 
+| <img src="pic/cb_bm_confusion.png" width="400" height="400">| <img src="pic/pbmc_confusion.png" width="400" height="400">| <img src="pic/label_index.png" width="244" height="400">|
+|:-:|:-:|:-:|
+| CordBlood and BoneMarrow dataset | PBMC dataset | |
   
 </div>
 
@@ -47,5 +47,3 @@ We present a immune cell classifier tool created scClass based on supervised dee
 scClass is a package that can use in Python.
 We except the model has higher accuracy of adapted in our future version.
 The source code is available at https://github.com/majaja068/scRNA-CellType-classifier/
-
-![image](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
