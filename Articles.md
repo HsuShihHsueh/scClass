@@ -5,7 +5,7 @@ Single-cell RNA sequencing(scRNA-seq) is a novel RNA seqensing method which can 
 However, the traditional way to annotate cell-type like isolate by flow cytometry or clustering by seurat is either expensive or inefficient.
 Here we present scClass, a supervised deep learning model for annotating celltype on immmune cell.
 scClass use bone marrow and cord blood dataset to training and try to predict on pbmc and other dataset.
-We provide a package for running scClass on Python and have a demo on [Colab]()
+We provide a package for running scClass on Python and have a demo on [Colab]().
 
 ## Introduction
 Cell type annotation is one of the most important step in Single-cell RNA sequencing analysing.
