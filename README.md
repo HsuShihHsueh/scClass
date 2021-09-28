@@ -1,8 +1,9 @@
-<a href="https://colab.research.google.com/github/majaja068/scRNA-CellType-classifier/blob/main/scClass_demo.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a>
-
-<span style="width:90px;height:20px;background:linear-gradient(90deg,#4D4D4D 33%,#1081C1 33%);border-radius:3px;color:white;text-align:right;font-family:Arial;padding-right:10px;box-shadow:1px 1px 1px 1px #cccccc;">
-  Acticle
-</span>
+<a href="https://colab.research.google.com/github/majaja068/scRNA-CellType-classifier/blob/main/scClass_demo.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory">
+</a>&nbsp;
+<a href="Articles.md">
+  <img src="pic/article_logo.png" height="28">
+</a>
 
 # scClass：<br>A immune cell classifier tool created by supervised deep learning
 
