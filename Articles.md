@@ -1,4 +1,4 @@
-# scClass: A immune cell classifier tool created by supervised deep learning
+# scClass: <br>A immune cell classifier tool created by supervised deep learning
 
 ## Abstract
 Single-cell RNA sequencing(scRNA-seq) is a novel RNA seqensing method which can track their RNA-expression in every single cell. 
