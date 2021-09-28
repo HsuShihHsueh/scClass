@@ -1,4 +1,4 @@
-<a href="https://colab.research.google.com/drive/1aKaPxYEgtCNlprYR8b6U4zInw-OQvntv#scrollTo=KV1E3pHrGZBp"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a>
+<a href="https://colab.research.google.com/github/majaja068/scRNA-CellType-classifier/blob/main/scClass_demo.ipynb><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a>
 # scClass：<br>A immune cell classifier tool created by supervised deep learning
 
 Import scRNA_celltype_classifier as:
