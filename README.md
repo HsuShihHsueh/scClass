@@ -2,7 +2,7 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory">
 </a>&nbsp;
 <a href="Articles.md">
-  <img src="pic/article_logo.png" height="25">
+  <img src="pic/article_logo.png" height="21.5">
 </a>
 
 # scClass：<br>A immune cell classifier tool created by supervised deep learning
