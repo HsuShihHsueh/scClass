@@ -1,8 +1,5 @@
-# scRNA celltype classifier: a immue cell classifier
-
-
-
-## API
+<a href="https://colab.research.google.com/drive/1aKaPxYEgtCNlprYR8b6U4zInw-OQvntv#scrollTo=KV1E3pHrGZBp"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a>
+# scClass：<br>A immune cell classifier tool created by supervised deep learning
 
 Import scRNA_celltype_classifier as:
 ```
@@ -40,15 +37,15 @@ random(matrix)            |kick label<0 and suffle the cell data
 
 Attributes    | default | -
 ----------    |----     |--- 
-EPOCH         |10       |HyperParameter 
-BATCH_SIZE    |5000     |HyperParameter, if your PC out of RAM when training, you can lower down this parameter
-LR            |0.001    |HyperParameter 
-num_in        |45,468   |the number of input  parameter
-num_out       |13       |the number of output parameter
-num_acc_train |1,000    |since the training set will be huge, the number of data(randomly) calculating training accuracy
-ratio_train   |0.7      |the ratio of the data assign to training set 
-ratio_val     |0.2      |the ratio of the data assign to validation set, lower this parameter if your PC out of RAM
-ratio_test    |0.1      |the ratio of the data assign to testing set, lower this parameter if your PC out of RAM
+EPOCH         |xx       |HyperParameter 
+BATCH_SIZE    |xxxx     |HyperParameter, if your PC out of RAM when training, you can lower down this parameter
+LR            |x.xxx    |HyperParameter 
+num_in        |xx,xxx   |the number of input  parameter
+num_out       |xx       |the number of output parameter
+num_acc_train |x,xxx    |since the training set will be huge, the number of data(randomly) calculating training accuracy
+ratio_train   |x.x      |the ratio of the data assign to training set 
+ratio_val     |x.x      |the ratio of the data assign to validation set, lower this parameter if your PC out of RAM
+ratio_test    |x.x      |the ratio of the data assign to testing set, lower this parameter if your PC out of RAM
 
 #### Class
 
@@ -84,9 +81,5 @@ confusion_matrix(y_pred,y_true) |get a confusion_matrix from ```y_pred``` and ``
 auto_run(load_model,save)       |auto_run demo_training_data.py, ```load_model``` ```save``` are boolean could choosed
 
 
-
-## Missing
-
-1.some label still mismatch
 
 
