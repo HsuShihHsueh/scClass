@@ -22,8 +22,19 @@ Using bone marrow and cord blood dataset to training and try to predict on pbmc 
 We use algothithn from librarySizeFactors and computeSumFactors function on scran(R package) and implemented by scanpy function.<br>
 We transfer cell type refer to [Cell Ontology](https://www.ebi.ac.uk/ols/ontologies/cl).
 <div align="center">
-  <kbd><img src="pic/data_preprocessing.png" width="540" height="270" style="text-align: center"></kbd><br>
-  ▲ Data-Preprocessing
+  <kbd>
+    <img src="pic/data_preprocessing.png" width="540" height="270"><br>
+    <p align="left">
+      <b>Figure 1.</b><br><br>
+      Data preprocessing workflow for training dataset.<br>
+      (step1) Get cell type on other csv file<br>
+      (step2) Add parameter and selected unlabel cell and unexpression gene<br>
+      (step3) Get size factor from librarySizeFactors method<br>
+      (step4) Normalize by size factor<br>
+      (step5) Transfer origin labels to 13 customize labels<br>
+      (step6) save data as sparse matrix format<br>
+    </p>
+  </kbd>
 </div>  
 
 ### scClass Model
