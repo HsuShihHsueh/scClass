@@ -47,7 +47,7 @@ To adpate each dataset,  we add standard normalize for each channel after output
 ## Rseult: compare to origin dataset
 <div align="center">
   
-| <img src="pic/cb_bm_confusion.png" width="400" height="400">| <img src="pic/pbmc_confusion.png" width="400" height="400">| <img src="pic/label_index.png" width="244" height="380">|
+| <img src="pic/cb_bm_confusion.png" width="400" height="400">| <img src="pic/pbmc_confusion.png" width="400" height="400">| <img src="pic/label2index.png" width="150" height="380">|
 |:-:|:-:|:-:|
 | CordBlood and BoneMarrow dataset | PBMC dataset | |
   
