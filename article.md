@@ -11,7 +11,7 @@ We provide a package for running scClass on Python and have a demo on [Colab](ht
 Cell type annotation is one of the most important step in Single-cell RNA sequencing analysing.
 There are many annotation tools which can found on scRNA-tools nowadays.
 As the amount of cells in one scRNA-seq study grow up immediately,
-but most scRNA-tools aren't optimized, so that it cost more memory and computation.
+but most [scRNA-tools](https://www.scrna-tools.org/tools) aren't optimized, so that it cost more memory and computation.
 In our demo, we classify around 160,000 cells but use only 12GB moemory on Colab.
 
 ## Data and Model
