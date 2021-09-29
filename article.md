@@ -12,15 +12,15 @@ Cell type annotation is one of the most important step in Single-cell RNA sequen
 There are many annotation tools which can found on scRNA-tools nowadays.
 As the amount of cells in one scRNA-seq study grow up immediately,
 but most scRNA-tools aren't optimized, so that it cost more memory and computation.
-In our demo, we classify around 140,000 cells but use only 12GB moemory on Colab.
+In our demo, we classify around 160,000 cells but use only 12GB moemory on Colab.
 
 ## Data and Model
 
 ### Dataset and Data-Preprocessing
 We collect 10X genomics datasets since it is a popularization scRNA-seq method.
 Using bone marrow and cord blood dataset to training and try to predict on pbmc and other dataset.<br>
-We use algothithn from librarySizeFactors and computeSumFactors function on scran(R package) and implemented by scanpy function.<br>
-We transfer cell type refer to [Cell Ontology](https://www.ebi.ac.uk/ols/ontologies/cl).
+We use algothithn from librarySizeFactors and computeSumFactors function on scran(R package) and implemented by scanpy function
+and transfer cell type refer to [Cell Ontology](https://www.ebi.ac.uk/ols/ontologies/cl), more infromation in <b>Figure 1.</b>
 <div align="center">
   <kbd>
     <img src="pic/data_preprocessing.png" width="540" height="270"><br>
@@ -46,6 +46,8 @@ To adpate each dataset,  we add standard normalize for each channel after output
 
 ## Rseult: compare to origin dataset
 <div align="center">
+
+The origin(bone marrow and cord blood) dataset has 94% accuracy on their testing set, and  has 93% accuracy on pbmc dataset.
   
 | <img src="pic/cb_bm_confusion.png" width="400" height="400">| <img src="pic/pbmc_confusion.png" width="400" height="400">| <img src="pic/label2index.png" width="150" height="380">|
 |:-:|:-:|:-:|
