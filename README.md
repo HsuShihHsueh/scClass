@@ -9,12 +9,12 @@
 
 Import scRNA_celltype_classifier as:
 ```
-import scRNA_celltype_classifier as scClass
+import scClass
 ```
 
 If you want using our pre-training model, import:
 ```
-from scRNA_celltype_classifier.main import Model
+from scClass.main import Model
 ```
 that will inhert the torch.nn.Module
 
