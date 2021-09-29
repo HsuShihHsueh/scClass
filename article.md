@@ -45,9 +45,10 @@ We can pick unknown cell by the output are less prominent.
 To adpate each dataset,  we add standard normalize for each channel after output and pick the maximum output upper 1.6~2.0(different by each label) to unknow label.
 
 ## Rseult: compare to origin dataset
-<div align="center">
 
 The origin(bone marrow and cord blood) dataset has 94% accuracy on their testing set, and  has 93% accuracy on pbmc dataset.
+
+<div align="center">
   
 | <img src="pic/cb_bm_confusion.png" width="400" height="400">| <img src="pic/pbmc_confusion.png" width="400" height="400">| <img src="pic/label2index.png" width="150" height="380">|
 |:-:|:-:|:-:|
