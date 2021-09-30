@@ -37,10 +37,12 @@ and transfer cell type refer to [Cell Ontology](https://www.ebi.ac.uk/ols/ontolo
   </kbd>
 </div>  
 
-### scClass Model
+### Training Model
 First, the transcriptome needs to transfer the gene axis to match the model.
 Then go throught a linear-layer and select the arg maximum of output.
 The model is implemented by PyTorch.
+
+### Selecting unknow cell type
 We can pick unknown cell by the output are less prominent. 
 To adpate each dataset,  we add standard normalize for each channel after output and pick the maximum output upper 1.6~2.0(different by each label) to unknow label.
 
