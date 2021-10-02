@@ -24,22 +24,25 @@ In our demo, we classify around 160,000 cells but use only 12GB moemory on Colab
 ## Data and Model
 
 ### Dataset and Data-Preprocessing
-We collect 10X genomics datasets since it is a popularization scRNA-seq method.
+We collected 10X genomics datasets since it is a popularization scRNA-seq method.
 Using bone marrow and cord blood dataset to training and try to predict on pbmc and other dataset.<br>
-We use algothithn from librarySizeFactors and computeSumFactors function on scran(R package) and implemented by scanpy function
-and transfer cell type refer to [Cell Ontology](https://www.ebi.ac.uk/ols/ontologies/cl), more infromation in <b>Figure 1.</b>
+Then we performed data-preprocessing.
+First, we added cell type which provided by the project contributors<b>(Figure 1. step1)</b>.
+Next, did quality control<b>(Figure 1. step2)</b>.
+Then, used algothithm librarySizeFactors and computeSumFactors function from scran(R package) and implemented by scanpy function <b>(Figure 1. step3、4)</b>.
+Finally, transferred cell type refer to [Cell Ontology](https://www.ebi.ac.uk/ols/ontologies/cl) <b>(Figure 1. step5)</b> and save data <b>(Figure 1. step6)</b>.
 <div align="center">
   <kbd>
-    <img src="pic/data_preprocessing.png" width="540" height="270"><br>
-    <p align="left">
-      <b>Figure 1.</b><br><br>
-      Data preprocessing workflow for training dataset.<br>
-      (step1) Get cell type on other csv file<br>
-      (step2) Add parameter and selected unlabel cell and unexpression gene<br>
-      (step3) Get size factor from librarySizeFactors method<br>
-      (step4) Normalize by size factor<br>
-      (step5) Transfer origin labels to 13 customize labels<br>
-      (step6) save data as sparse matrix format<br>
+    <img src="pic/data_preprocessing.png" width="560"><br>
+    <p align="left"><br>
+      <b>Figure 1.</b>
+      Data preprocessing workflow for training dataset.<br><br>
+      (step1) Get cell type on other csv file<br><br>
+      (step2) Add parameter and selected unlabel cell and unexpression gene<br><br>
+      (step3) Get size factor from librarySizeFactors method<br><br>
+      (step4) Normalize by size factor<br><br>
+      (step5) Transfer origin labels to 13 customize labels<br><br>
+      (step6) save data as sparse matrix format
     </p>
   </kbd>
 </div>  
@@ -47,11 +50,20 @@ and transfer cell type refer to [Cell Ontology](https://www.ebi.ac.uk/ols/ontolo
 ### Training Model
 First, the transcriptome needs to transfer the gene axis to match the model.
 Then go throught a linear-layer and select the arg maximum of output.
-The model is implemented by PyTorch.
+The model is implemented by PyTorch. 
 
 ### Selecting unknow cell type
 We can pick unknown cell by the output are less prominent. 
-To adpate each dataset,  we add standard normalize for each channel after output and pick the maximum output upper 1.6~2.0(different by each label) to unknow label.
+To adpate each dataset,  we add standard normalize for each channel after output and pick the maximum output upper 1.6~2.0(different by each label) to unknow label <b>(Figure 2.)</b>
+<div align="center">
+  <kbd>
+    <img src="pic/model.png" width="560"><br>
+    <p align="left"><br>
+      <b>Figure 2.</b>
+      Structure for model.
+    </p>
+  </kbd>
+</div> 
 
 ## Rseult: compare to origin dataset
 
