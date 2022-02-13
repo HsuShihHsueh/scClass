@@ -1,4 +1,4 @@
-<a href="https://colab.research.google.com/github/majaja068/scRNA-CellType-classifier/blob/main/scClass_demo.ipynb">
+<a href="https://colab.research.google.com/github/majaja068/scClass/blob/main/scClass_demo.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory">
 </a>&nbsp;
 <a href="article.md">
@@ -12,7 +12,7 @@ Single-cell RNA sequencing(scRNA-seq) is a novel RNA seqensing method which can 
 However, the traditional way to annotate cell-type like isolate by flow cytometry or clustering by seurat is either expensive or inefficient.
 Here we present scClass, a supervised deep learning model for annotating celltype on immmune cell.
 scClass use bone marrow and cord blood dataset to training and try to predict on pbmc and other dataset.
-We provide a package for running scClass on Python and have a demo on [Colab](https://colab.research.google.com/github/majaja068/scRNA-CellType-classifier/blob/main/scClass_demo.ipynb).
+We provide a package for running scClass on Python and have a demo on [Colab](https://colab.research.google.com/github/majaja068/scClass/blob/main/scClass_demo.ipynb).
 
 ## Introduction
 Cell type annotation is one of the most important step in Single-cell RNA sequencing analysing.
@@ -54,7 +54,7 @@ The model is implemented by PyTorch.
 
 ### Selecting unknow cell type
 We can pick unknown cell by the output are less prominent. 
-To adpate each dataset,  we add standard normalize for each channel after output and pick the maximum output upper 1.6~2.0(different by each label) to unknow label <b>(Figure 2.)</b>
+To adpate each dataset,  we add standard normalize for each channel after output and pick the maximum output upper 1.6 ~ 2.0(different by each label) to unknow label <b>(Figure 2.)</b>
 <div align="center">
   <kbd>
     <img src="pic/model.png" width="560"><br>
@@ -64,6 +64,7 @@ To adpate each dataset,  we add standard normalize for each channel after output
     </p>
   </kbd>
 </div> 
+
 
 ## Rseult: compare to origin dataset
 
