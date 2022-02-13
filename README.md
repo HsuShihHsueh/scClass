@@ -1,4 +1,4 @@
-<a href="https://colab.research.google.com/github/majaja068/scClass/blob/main/scClass_demo.ipynb">
+<a href="https://colab.research.google.com/github/majaja068/scClass/blob/v2022.2.modelA/scClass_demo.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory">
 </a>&nbsp;
 <a href="article.md">
