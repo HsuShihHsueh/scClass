@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: scClass
+Version: 0.9.29
+Summary: A immune cell classifier tool create by supervised deep learning
+Home-page: https://github.com/majaja068/scRNA-CellType-classifier
+License: UNKNOWN
+Keywords: scRNA-seq,cell-type,gene-expression,classifier
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9.6
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+
+UNKNOWN
+
