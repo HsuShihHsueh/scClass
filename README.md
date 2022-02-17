@@ -3,7 +3,7 @@
 <a href="https://colab.research.google.com/github/majaja068/scClass/blob/v2022.2.modelA/scClass_demo.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory">
 
-####A immune cell classifier tool created by supervised deep learning
+#### A immune cell classifier tool created by supervised deep learning
 
 Single-cell RNA sequencing (scRNA-seq) is a novel RNA sequencing
 method which can track their RNA-expression in every single cell. However, the
@@ -27,26 +27,26 @@ Import scRNA_celltype_classifier as:
 import scClass
 ```
 
-If you want using our pre-training model, import:
+If you want using our pre-training model, import: (which inherit from torch.nn.Module)
 ```
 from scClass.main import Model
 ```
-that will inhert the torch.nn.Module
+that will 
 
 
 ## Input Requirement
 
-###While Training Model
-####Data Matrix File
+### While Training Model
+#### Data Matrix File
 To save the RAM, we use```scipy.sparse``` of shape (n_genes, n_cells) to store data matrix file. For example:
-   -  | 1_cell | 2_cell | 3_cell |...
+   /  | 1_cell | 2_cell | 3_cell |...
 ------|--------|--------|--------|----
 1_gene|       0|       0|       1|...
 2_gene|       2|       0|       0|...
 3_gene|       0|       0|       0|...
 ...   |       .|       .|       .|...
 
-####Cell Type File
+#### Cell Type File
 We use 0 ~ 12 to represent 13 cell types, which are:
 
 index |cell_type
@@ -67,13 +67,13 @@ index |cell_type
 12	  |bone marrow hematopoietic cell 
 
 save the cell types list as```numpy.array```.
-####dataloader
+#### dataloader
 Once the data matrix file and cell type file are prepared, use the function below to load in:
 ```
 dataset = scClass.npz_dataloader(matrix,label)
 ```
 
-###While Doing Classification by Using Pre-training Model
+### While Doing Classification by Using Pre-training Model
 Put ```anndata.AnnData``` data :
 ```
 y_pred = scClass.predict_batch(adata,model,batch_size=8_000)
