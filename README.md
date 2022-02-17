@@ -31,8 +31,6 @@ If you want using our pre-training model, import: (which inherit from torch.nn.M
 ```
 from scClass.main import Model
 ```
-that will 
-
 
 ## Input Requirement
 
@@ -84,19 +82,19 @@ scClass.save_predict(y_pred,path)
 ```
 the prediction on path ```./output/cell_type_xxxxxxxx_xxxxxx.csv``` will look like:
 
-index	|label
---------|-----------------
-0	    |T-helper cell
-2	    |memory B cell
-0	    |T-helper cell
-10	    |monocyte
-7	    |natural killer cell
-0	    |T-helper cell
-1	    |cytotoxic T cell
-1	    |cytotoxic T cell
-1	    |cytotoxic T cell
-10	    |monocyte
-...     |...
+```
+index,label
+0,T-helper cell
+2,memory B cell
+0,T-helper cell
+10,monocyte
+7,natural killer cell
+0,T-helper cell
+1,cytotoxic T cell
+1,cytotoxic T cell
+1,cytotoxic T cell
+...
+```
 
 ## Data Proceesing
 
