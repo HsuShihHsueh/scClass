@@ -1,11 +1,26 @@
+# scClass
+
 <a href="https://colab.research.google.com/github/majaja068/scClass/blob/v2022.2.modelA/scClass_demo.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory">
-</a>&nbsp;
-<a href="article.md">
-  <img src="pic/article_logo.png" height="21.5">
-</a>
 
-# scClass：<br>A immune cell classifier tool created by supervised deep learning
+####A immune cell classifier tool created by supervised deep learning
+
+Single-cell RNA sequencing (scRNA-seq) is a novel RNA sequencing
+method which can track their RNA-expression in every single cell. However, the
+traditional way to annotate cell-type like isolate by flow cytometry or clustering by seurat
+is either expensive or inefficient. Here we present scClass, a supervised deep learning
+model for annotating celltype on immmune cell. In this article, nine public datasets are
+collected used for training set or testing set. Finally, we provide a package for running
+scClass on Python and have a demo on Colab.
+
+
+
+## Installation & Import
+
+The package is available using:
+```
+pip install git+https://github.com/majaja068/scClass
+```
 
 Import scRNA_celltype_classifier as:
 ```
@@ -19,8 +34,71 @@ from scClass.main import Model
 that will inhert the torch.nn.Module
 
 
+## Input Requirement
 
-### Data Proceesing
+###While Training Model
+####Data Matrix File
+To save the RAM, we use```scipy.sparse``` of shape (n_genes, n_cells) to store data matrix file. For example:
+   -  | 1_cell | 2_cell | 3_cell |...
+------|--------|--------|--------|----
+1_gene|       0|       0|       1|...
+2_gene|       2|       0|       0|...
+3_gene|       0|       0|       0|...
+...   |       .|       .|       .|...
+
+####Cell Type File
+We use 0 ~ 12 to represent 13 cell types, which are:
+
+index |cell_type
+------|-------------------------------
+-1	  |unknown
+0	  |T-helper cell
+1	  |cytotoxic T cell
+2	  |memory B cell
+3	  |naive B cell
+4	  |plasma cell
+5	  |precursor B cell
+6	  |pro-B cell
+7	  |natural killer cell
+8	  |erythrocyte
+9	  |megakaryocyte
+10	  |monocyte
+11	  |dendritic cell
+12	  |bone marrow hematopoietic cell 
+
+save the cell types list as```numpy.array```.
+####dataloader
+Once the data matrix file and cell type file are prepared, use the function below to load in:
+```
+dataset = scClass.npz_dataloader(matrix,label)
+```
+
+###While Doing Classification by Using Pre-training Model
+Put ```anndata.AnnData``` data :
+```
+y_pred = scClass.predict_batch(adata,model,batch_size=8_000)
+```
+Save Prediction:
+```
+scClass.save_predict(y_pred,path)
+```
+the prediction on path ```./output/cell_type_xxxxxxxx_xxxxxx.csv``` will look like:
+
+index	|label
+--------|-----------------
+0	    |T-helper cell
+2	    |memory B cell
+0	    |T-helper cell
+10	    |monocyte
+7	    |natural killer cell
+0	    |T-helper cell
+1	    |cytotoxic T cell
+1	    |cytotoxic T cell
+1	    |cytotoxic T cell
+10	    |monocyte
+...     |...
+
+## Data Proceesing
 
 #### Attributes
 Attributes  |   -
@@ -43,15 +121,16 @@ random(matrix)            |kick label<0 and suffle the cell data
 
 Attributes    | default | -
 ----------    |----     |--- 
-EPOCH         |xx       |HyperParameter 
-BATCH_SIZE    |xxxx     |HyperParameter, if your PC out of RAM when training, you can lower down this parameter
-LR            |x.xxx    |HyperParameter 
-num_in        |xx,xxx   |the number of input  parameter
-num_out       |xx       |the number of output parameter
-num_acc_train |x,xxx    |since the training set will be huge, the number of data(randomly) calculating training accuracy
-ratio_train   |x.x      |the ratio of the data assign to training set 
-ratio_val     |x.x      |the ratio of the data assign to validation set, lower this parameter if your PC out of RAM
-ratio_test    |x.x      |the ratio of the data assign to testing set, lower this parameter if your PC out of RAM
+EPOCH         |10       |HyperParameter 
+BATCH_SIZE    |5000     |HyperParameter, if your PC out of RAM when training, you can lower down this parameter
+LR            |0.001    |HyperParameter 
+optimizer     |Adam     |
+num_in        |45,468   |the number of input  parameter
+num_out       |13       |the number of output parameter
+num_acc_train |1,000    |since the training set will be huge, the number of data(randomly) calculating training accuracy
+ratio_train   |0.7      |the ratio of the data assign to training set 
+ratio_val     |0.2      |the ratio of the data assign to validation set, lower this parameter if your PC out of RAM
+ratio_test    |0.1      |the ratio of the data assign to testing set, lower this parameter if your PC out of RAM
 
 #### Class
 
