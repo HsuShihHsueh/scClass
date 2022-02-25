@@ -1,6 +1,6 @@
 # scClass
 
-<a href="https://colab.research.google.com/github/majaja068/scClass/blob/v2022.2.modelA/scClass_demo.ipynb">
+<a href="https://colab.research.google.com/github/HsuShihHsueh/scClass/blob/v2022.2.modelA/scClass_demo.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory">
 
 #### A immune cell classifier tool created by supervised deep learning
@@ -19,7 +19,7 @@ scClass on Python and have a demo on Colab.
 
 The package is available using:
 ```
-pip install git+https://github.com/majaja068/scClass
+pip install git+https://github.com/HsuShihHsueh/scClass
 ```
 
 Import scRNA_celltype_classifier as:
