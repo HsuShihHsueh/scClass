@@ -1,5 +1,4 @@
 # scClass
-#### A immune cell classifier tool created by supervised deep learning
 
 <a href="https://colab.research.google.com/github/HsuShihHsueh/scClass/blob/v2022.2.modelA/scClass_demo.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory">
