@@ -12,7 +12,7 @@ traditional way to annotate cell-type like isolate by flow cytometry or clusteri
 is either expensive or inefficient. Here we present scClass, a supervised deep learning
 model for annotating celltype on immmune cell. In this article, nine public datasets are
 collected used for training set or testing set. Finally, we provide a package for running
-scClass on Python and have a demo on [Colab](https://colab.research.google.com/github/majaja068/scRNA-CellType-classifier/blob/main/scClass_demo.ipynb).
+scClass on Python and have a demo on [Colab](https://colab.research.google.com/github/majaja068/scRNA-CellType-classifier/blob/main/scClass_demo.ipynb).<br>
 whole source code and datasets are available at [Docker Hub](https://hub.docker.com/r/hsushihhsueh/scclass).
 
 
