@@ -1,0 +1,12 @@
+unknown,-1
+helper T cell,0
+cytotoxic T cell,1
+memory B cell,2
+naive B cell,3
+plasma cell,4
+natural killer cell,5
+erythrocyte,6
+megakaryocyte,7
+monocyte,8
+dendritic cell,9
+HSPC,10
