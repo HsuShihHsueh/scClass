@@ -3,7 +3,7 @@
 	"thumbnail" : "https://www.researchgate.net/publication/335329658/figure/fig1/AS:797664622960647@1567189474197/Lineage-tree-representation-of-cells-of-the-immune-system-Immune-cells-are-derived-from.png",
 	"project_zh" : "scClass: 基於監督式深度學習的免疫細胞分類工具",
 	"project_en" : "scClass: A immune cell classifier tool created by supervised deep learning",
-	"hashtag" : ["#BioInformatics","#DeepLearning","scRNA-seq","#Python"],
+	"hashtag" : ["#BioInformatics","#DeepLearning","#scRNA-seq","#Python"],
 	"description_zh" : "單細胞RNA定序(scRNA-seq)是一種新型的RNA定序方法，有別於傳統RNA定序(bulk RNA-seq)只能觀察一群細胞的RNA總表達量，單細胞RNA定序可追蹤每顆細胞的RNA表現量。然而一般註釋細胞類型的作法可能會非常昂貴或耗時。在這裡我們展示了scClass，一種藉由半監督式深度學習模型來註釋免疫細胞類型。我們將scClass包裝成Python套件並在Colab上提供範例檔。",
 	"description_en" : "Single-cell RNA sequencing (scRNA-seq) is a novel RNA sequencing method which can track their RNA-expression in every single cell. However, the traditional way to annotate cell-type is either expensive or inefficient. Here we present scClass, a supervised deep learning model for annotating celltype on immmune cell. Finally, we provide a package for running scClass on Python and have a demo on Colab.",
 	"github" : "https://github.com/HsuShihHsueh/scClass",
