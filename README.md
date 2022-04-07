@@ -13,7 +13,7 @@ is either expensive or inefficient. Here we present scClass, a supervised deep l
 model for annotating celltype on immmune cell. In this article, nine public datasets are
 collected used for training set or testing set. Finally, we provide a package for running
 scClass on Python and have a demo on [Colab](https://colab.research.google.com/github/majaja068/scRNA-CellType-classifier/blob/main/scClass_demo.ipynb).<br>
-Whole source code and datasets are available at [Docker Hub](https://hub.docker.com/r/hsushihhsueh/scclass).
+Whole [source code](https://github.com/HsuShihHsueh/scClass/tree/v2022.2.modelA) and datasets are available at [Docker Hub](https://hub.docker.com/r/hsushihhsueh/scclass).
 
 
 
