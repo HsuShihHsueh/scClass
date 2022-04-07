@@ -5,15 +5,15 @@ Chung-Yen Lin (cylin@iis.sinica.edu.tw); LAB website: http://eln.iis.sinica.edu.
 Shih-Hsueh Hsu (qqqq471tw@gmail.com)
 ## Description
 #### scClass Dataset
-1) BoneMarrow from  Human  Cell  Atlas<br>
-2) CordBlood  from  Human  Cell  Atlas<br>
-3) PBMC3K from scanpy dataset (origin data from 10x Genomics)<br>
-4) PBMC68k from Cell Blast (origin data from 10x Genomics)<br>
-5) PBMC_CITE from New  York Genome  Center<br>
-6) PBMC_scPortal  from Single Cell Portal - Broad Institute<br>
-7) Placenta from Cell Blast<br>
-8) HTD_Thymic from Human  Cell  Atlas<br>
-9) HTD_HSC from Human  Cell  Atlas<br>
+1) BoneMarrow from  Human  Cell  Atlas ([link](https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/BoneMarrow.h5ad.gz))<br>
+2) CordBlood  from  Human  Cell  Atlas ([link](https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/CordBlood.h5ad.gz))<br>
+3) PBMC3K from scanpy dataset (origin data from 10x Genomics) ([link](https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/PBMC3K.h5ad.gz))<br>
+4) PBMC68k from Cell Blast (origin data from 10x Genomics) ([link](https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/PBMC68k.h5ad.gz))<br>
+5) PBMC_CITE from New  York Genome  Center ([link](https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/PBMC_CITE.h5ad.gz))<br>
+6) PBMC_scPortal  from Single Cell Portal - Broad Institute ([link](https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/PBMC_scPortal.h5ad.gz))<br>
+7) Placenta from Cell Blast ([link](https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/Placenta.h5ad.gz))<br>
+8) HTD_Thymic from Human  Cell  Atlas ([link](https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/HTD_Thymic.h5ad.gz))<br>
+9) HTD_HSC from Human  Cell  Atlas ([link](https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/HTD_HSC.h5ad.gz))<br>
 #### Classification Method
 1) Model A：machine learing model with single layer MLP<br>
 2) Model B：Base on Model A adding batch effect correction by harmony<br>
