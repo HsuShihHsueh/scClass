@@ -1,0 +1,9 @@
+wget https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/BoneMarrow.h5ad.gz
+wget https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/CordBlood.h5ad.gz
+wget https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/HTD_HSC.h5ad.gz
+wget https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/HTD_Thymic.h5ad.gz
+wget https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/PBMC3K.h5ad.gz
+wget https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/PBMC68k.h5ad.gz
+wget https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/PBMC_CITE.h5ad.gz
+wget https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/PBMC_scPortal.h5ad.gz
+wget https://github.com/HsuShihHsueh/scClass/releases/download/v2022.3.dataset/Placenta.h5ad.gz
